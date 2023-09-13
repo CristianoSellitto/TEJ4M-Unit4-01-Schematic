@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery 5V
+U 1 1 6501E721
+P 2500 4200
+F 0 "5V" H 2608 4246 50  0000 L CNN
+F 1 "Battery" H 2608 4155 50  0000 L CNN
+F 2 "" V 2500 4260 50  0001 C CNN
+F 3 "~" V 2500 4260 50  0001 C CNN
+	1    2500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 220Ω
+U 1 1 650265EC
+P 2650 4400
+F 0 "220Ω" V 2500 4400 50  0000 C BNN
+F 1 "R" V 2550 4400 50  0000 C CNN
+F 2 "" V 2580 4400 50  0001 C CNN
+F 3 "~" H 2650 4400 50  0001 C CNN
+	1    2650 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R 220Ω
+U 1 1 65027CC5
+P 3150 4250
+F 0 "220Ω" H 3220 4296 50  0000 L CNN
+F 1 "R" H 3220 4205 50  0000 L CNN
+F 2 "" V 3080 4250 50  0001 C CNN
+F 3 "~" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 65023F9C
+P 2950 4000
+F 0 "SW?" H 2950 4285 50  0000 C CNN
+F 1 "SW_Push" H 2950 4194 50  0000 C CNN
+F 2 "" H 2950 4200 50  0001 C CNN
+F 3 "~" H 2950 4200 50  0001 C CNN
+	1    2950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4000 3150 4100
+Wire Wire Line
+	2500 4000 2750 4000
+Wire Wire Line
+	3450 4000 3450 4700
+Wire Wire Line
+	2500 4700 2500 4400
+Connection ~ 2500 4400
+Wire Wire Line
+	2500 4700 3450 4700
+Wire Wire Line
+	3150 4400 3100 4400
+$Comp
+L Device:CP 100uF
+U 1 1 6507E511
+P 3300 4000
+F 0 "100uF" V 3555 4000 50  0000 C CNN
+F 1 "CP" V 3450 4000 50  0000 C CNN
+F 2 "" H 3338 3850 50  0001 C CNN
+F 3 "~" H 3300 4000 50  0001 C CNN
+	1    3300 4000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 4000
+$Comp
+L Device:LED Red
+U 1 1 6502BF6F
+P 2950 4400
+F 0 "Red" H 2943 4617 50  0000 C CNN
+F 1 "LED" H 2943 4526 50  0000 C CNN
+F 2 "" H 2950 4400 50  0001 C CNN
+F 3 "~" H 2950 4400 50  0001 C CNN
+	1    2950 4400
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC
